@@ -6,7 +6,7 @@ module FFakerTW
     extend self
 
     def name
-      "#{first_name}#{last_name}"
+      "#{last_name}#{first_name}"
     end
 
     def first_name
@@ -17,8 +17,8 @@ module FFakerTW
       fetch_sample(LAST_NAMES)
     end
 
-    def last_first
-      "#{last_name}#{first_name}"
+    def first_last
+      "#{first_name}#{last_name}"
     end
   end
 end

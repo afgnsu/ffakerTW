@@ -10,4 +10,6 @@
   - Bug fix
 
 ## 0.3.0
-  - Verify University name
+  - Verify university name
+## 0.4.0
+  - Fix bug

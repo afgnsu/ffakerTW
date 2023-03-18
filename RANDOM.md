@@ -3,27 +3,27 @@
 ffaker maintains its own random number generator which allows the responses to
 be deterministic and repeatable given the correct seed.
 
-You can get the current seed with `FFaker::Random.seed`, set it with
-`FFaker::Random.seed=<seed>`, and reset it back to its initial state with
-`FFaker::Random.reset!`. You can also use `FFaker::Random.rand` to get a random
+You can get the current seed with `FFakerTW::Random.seed`, set it with
+`FFakerTW::Random.seed=<seed>`, and reset it back to its initial state with
+`FFakerTW::Random.reset!`. You can also use `FFakerTW::Random.rand` to get a random
 number from the RNG.
 
 ```ruby
-require 'ffaker'
+require 'ffakerTW'
 
-> FFaker::Random.seed
+> FFakerTW::Random.seed
 # => 296167445578296242020083756344880134311
 
-> FFaker::Random.seed=12345
+> FFakerTW::Random.seed=12345
 # => 12345
 
-> FFaker::Random.seed
+> FFakerTW::Random.seed
 # => 12345
 
-> 5.times.map{ FFaker::Random.rand(0..9) }
+> 5.times.map{ FFakerTW::Random.rand(0..9) }
 # => [2, 5, 1, 7, 4]
-> FFaker::Random.reset!
-> 5.times.map{ FFaker::Random.rand(0..9) }
+> FFakerTW::Random.reset!
+> 5.times.map{ FFakerTW::Random.rand(0..9) }
 # => [2, 5, 1, 7, 4]
 ```
 
@@ -49,20 +49,20 @@ directory named "ffaker_random_seed_plugin.rb" that contains:
 # test/minitest/ffaker_random_seed_plugin.rb
 module Minitest
   def self.plugin_ffaker_random_seed_init(options)
-    FFaker::Random.seed = options[:seed]
+    FFakerTW::Random.seed = options[:seed]
   end
 end
 ```
 
 Next, you will need to add a `before_setup` method in every test file that uses
-ffaker and call `FFaker::Random.reset!` within it. Ideally this will be in your
+ffaker and call `FFakerTW::Random.reset!` within it. Ideally this will be in your
 test case superclass.
 
 ```ruby
 # test_helper.rb or similar.
 class TestBase < Minitest::Test
   def before_setup
-    FFaker::Random.reset!
+    FFakerTW::Random.reset!
   end
 end
 
@@ -85,8 +85,8 @@ Assuming you're already using ffaker in your specs, add the following to your
 ```ruby
 # spec_helper.rb
 RSpec.configure do |config|
-  config.before(:all)  { FFaker::Random.seed=config.seed }
-  config.before(:each) { FFaker::Random.reset! }
+  config.before(:all)  { FFakerTW::Random.seed=config.seed }
+  config.before(:each) { FFakerTW::Random.reset! }
 end
 ```
 
@@ -110,10 +110,10 @@ are:
   * Calls to `rand` will automatically use the correct random-number generator, no change is required.
 
 For other uses, you can access the random number generator directly via
-`FFaker::Random`. Example:
+`FFakerTW::Random`. Example:
 
 ```ruby
-array.shuffle!(random: FFaker::Random)
+array.shuffle!(random: FFakerTW::Random)
 ```
 
 ### Testing repeatability of ffaker modules
@@ -134,9 +134,9 @@ one line of test.
 
 ```ruby
 # Example: This will test the methods :method_name, :other_method_name, and
-# :another_method_name on class FFaker::NewFFakerModule.
+# :another_method_name on class FFakerTW::NewFFakerModule.
 assert_methods_are_deterministic(
-  FFaker::NewFFakerModule,
+  FFakerTW::NewFFakerModule,
   :method_name, :other_method_name, :another_method_name
 )
 ```
@@ -146,7 +146,7 @@ behavior, you can use the `assert_deterministic` method within a test method.
 
 ```ruby
 def test_some_method
-  assert_deterministic { FFaker::NewFFakerModule.some_method(:required_argument) }
+  assert_deterministic { FFakerTW::NewFFakerModule.some_method(:required_argument) }
 end
 ```
 

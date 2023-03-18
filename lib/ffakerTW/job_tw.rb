@@ -5,7 +5,7 @@ module FFakerTW
     extend ModuleUtils
     extend self
 
-    def title
+    def name
       fetch_sample(JOB_NOUNS)
     end
   end

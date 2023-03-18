@@ -7,9 +7,8 @@ gem install FfakerTW
 
 rails c
 
-include FfakerTW
 10.times do
-  puts FFakerTW::NameTW.last_first
+  puts FFakerTW::NameTW.name
 end
 ```
 
@@ -18,9 +17,11 @@ end
 還有
 - FFakerTW::AnimalTW.name (動物)
 - FFakerTW::CompanyTW.name (公司)
-- FFakerTW::EducationTW.name (大學)
-- FFakerTW::GenderTW.sample (性別)
-- FFakerTW::LoremTW.word、words、sentence、sentences、paragraph、paragraphs (亂數假文)
-- FFakerTW::NameTW (姓名) => 有 name、first_name、last_name、last_first 四種
-- FFakerTW::PhoneNumberTW.phone_number、mobile_phone_number、home_work_phone_number (電話號碼)
+- FFakerTW::EducationTW (學歷) => 有 name(校名)、degree(學位)
+- FFakerTW::GenderTW.name (性別)
+- FFakerTW::IdentificationTW.name (身份證號碼)
+- FFakerTW::JobTW.name (職稱)
+- FFakerTW::LoremTW (亂數假文) => 有 name(同word)、words、sentence、sentences、paragraph、paragraphs
+- FFakerTW::NameTW (姓名) => 有 name、first_name、last_name、first_last
+- FFakerTW::PhoneNumberTW (電話) => 有 name(隨機)、telphone、mobile
 等等。

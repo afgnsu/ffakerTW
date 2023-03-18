@@ -36,5 +36,7 @@ module FFakerTW
     def paragraphs(paragraph_count = 3)
       (1..paragraph_count).map { paragraph }
     end
+
+    alias name word
   end
 end

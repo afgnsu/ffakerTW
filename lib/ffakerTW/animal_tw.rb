@@ -5,7 +5,7 @@ module FFakerTW
     extend ModuleUtils
     extend self
 
-    def common_name
+    def name
       fetch_sample(COMMON_NAMES)
     end
   end

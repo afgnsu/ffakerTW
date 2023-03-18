@@ -10,7 +10,7 @@ module FFakerTW
 
     # Identity Card Number
     # https://en.wikipedia.org/wiki/National_identification_card_(Taiwan)#Identity_card_number
-    def id
+    def name
       letter = FFakerTW.letterify('?')
       code = AREA_CODE[letter.to_sym]
       gender = fetch_sample([1, 2])

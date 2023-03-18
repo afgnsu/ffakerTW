@@ -9,7 +9,7 @@ module FFakerTW
     SUFFIXES = %w[有限公司 公司].freeze
 
     def name
-      "#{NameCN.first_name}#{type}#{suffix}"
+      "#{NameTW.first_name}#{type}#{suffix}"
     end
 
     def type
