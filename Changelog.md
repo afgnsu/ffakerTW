@@ -13,3 +13,5 @@
   - Verify university name
 ## 0.4.0
   - Fix bug
+## 0.5.0
+  - Add company style

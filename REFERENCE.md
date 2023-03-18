@@ -14,7 +14,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `name` | 水牛, 北極熊, 鱈魚 |
+| `name` | 老虎, 兔子, 長頸鹿 |
 
 ## FFakerTW::CompanyTW
 
@@ -29,13 +29,13 @@
 | Method | Example |
 | ------ | ------- |
 | `name` | 陽明交通大學, 台灣師範大學, 東吳大學 |
-| `degree` | 理工博士, 資管學士, 經濟學碩士 |
+| `degree` | 電機博士, 資管學士, 數學碩士 |
 
 ## FFakerTW::GenderTW
 
 | Method | Example |
 | ------ | ------- |
-| `name` | ‼️ FFakerTW::UniqueUtils::RetryLimitExceeded: FFakerTW::UniqueUtils::RetryLimitExceeded |
+| `name` | 男, 女 |
 
 ## FFakerTW::IdentificationTW
 
@@ -77,7 +77,6 @@
 | `name` | 07-765-4321, 0930-349-422, 0901-441-110 |
 | `telphone` | 07-595-6493, 02-2844-8122, 05-340-2110 |
 | `mobile` | 0907-401-782, 0933-815-113, 0918-730-578 |
-| `country_code` | ‼️ FFakerTW::UniqueUtils::RetryLimitExceeded: FFakerTW::UniqueUtils::RetryLimitExceeded |
 | `international` | +886-6-471-5351, +886-3-986-6766, +886-3-781-3654 |
 | `international_telphone` | +886-8-234-6046, +886-2-2317-1862, +886-2-5619-7086 |
 | `international_mobile` | +886-911-665-107, +886-990-937-327, +886-942-809-028 |
