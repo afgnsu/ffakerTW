@@ -28,7 +28,7 @@ module FFakerTW
     letterify(numerify(masks))
   end
 
-  autoload :Address, 'ffakerTW/address'
+  autoload :AddressTW, 'ffakerTW/address_tw'
   autoload :Airline, 'ffakerTW/airline'
   autoload :AnimalTW, 'ffakerTW/animal_tw'
   autoload :Avatar, 'ffakerTW/avatar'
@@ -65,7 +65,6 @@ module FFakerTW
   autoload :LoremTW, 'ffakerTW/lorem_tw'
   autoload :Movie, 'ffakerTW/movie'
   autoload :Music, 'ffakerTW/music'
-  autoload :Name, 'ffakerTW/name'
   autoload :NameTW, 'ffakerTW/name_tw'
   autoload :NatoAlphabet, 'ffakerTW/nato_alphabet'
   autoload :Number, 'ffakerTW/number'

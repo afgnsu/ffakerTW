@@ -1,5 +1,6 @@
 # FFakerTW reference (註：只保留繁體中文的部份)
 
+ * [FFakerTW::AddressTW](#ffakeraddresstw)
  * [FFakerTW::AnimalTW](#ffakeranimaltw)
  * [FFakerTW::CompanyTW](#ffakercompanytw)
  * [FFakerTW::EducationTW](#ffakereducationtw)
@@ -9,6 +10,33 @@
  * [FFakerTW::LoremTW](#ffakerloremtw)
  * [FFakerTW::NameTW](#ffakernametw)
  * [FFakerTW::PhoneNumberTW](#ffakerphonenumbertw)
+
+## FFakerTW::AddressTW
+
+| Method | Example |
+| ------ | ------- |
+| `name` | 台北市大安區和平東路二段100號, 桃園市楊梅區新農街200號, 嘉義市西區仁愛路300號 |
+| `city` | 新竹市、宜蘭縣、台南市 |
+| `city_town` | 新竹縣竹北市、台中市西屯區、澎湖縣馬公市 |
+| `taipei` | 台北市萬華區雙和街218號 |
+| `newtaipei` | 新北市新店區永興路63號 |
+| `keelung` | 基隆市安樂區武聖街33號 |
+| `taoyuan` | 桃園市桃園區建國東路32號 |
+| `hsinchu` | 新竹縣寶山鄉竹安三路143號 |
+| `miaoli` | 苗栗縣苗栗市三水源20號 |
+| `taichung` | 台中市北區太原南一街38號 |
+| `changhua` | 彰化縣鹿港鎮民權路168號 |
+| `nantou` | 南投縣鹿谷鄉八德街290號 |
+| `yunlin` | 雲林縣斗六市楓溝街63號 |
+| `chiayi` | 嘉義市東區興美十街184號 |
+| `tainan` | 台南市東區崇德十五街156號 |
+| `kaohsiung` | 高雄市苓雅區中華四路194號 |
+| `pingtung` | 屏東縣屏東市崁頂145號 |
+| `penghu` | 澎湖縣白沙鄉通梁48號 |
+| `yilan` | 宜蘭縣三星鄉日興一路226號 |
+| `hualien` | 花蓮縣吉安鄉南海十街130號 |
+| `taitung` | 台東縣卑南鄉利吉路88號 |
+| `kingmen` | 金門縣金湖鎮尚義機場75號 |
 
 ## FFakerTW::AnimalTW
 
@@ -21,8 +49,8 @@
 | Method | Example |
 | ------ | ------- |
 | `name` | 屏宜科技公司, 白銘電子有限公司, 茜彥食品有限公司 |
-| `suffix` | ‼️ FFakerTW::UniqueUtils::RetryLimitExceeded: FFakerTW::UniqueUtils::RetryLimitExceeded |
-| `type` | 食品, 顧問, 電子 |
+| `suffix` | 股份有限公司, 有限公司, 公司 |
+| `type` | 資訊, 顧問, 光電 |
 
 ## FFakerTW::EducationTW
 

@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = "FfakerTW generates Traditional-Chinese dummy data."
   spec.description = "FfakerTW 建立繁體中文假資料"
   spec.homepage = "https://github.com/afgnsu/ffakerTW"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 2.0.0"
   spec.license = 'MIT'
 
   #spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
@@ -53,7 +53,7 @@ Gem::Specification.new do |spec|
     'documentation_uri' => 'https://github.com/afgnsu/ffakerTW/blob/main/REFERENCE.md'
   }
 
-  spec.add_development_dependency 'rake', '~> 13.0'
+  spec.add_development_dependency 'rake', '>= 0'
   spec.add_development_dependency 'rubocop'
   spec.add_development_dependency 'test-unit'
 

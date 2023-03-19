@@ -15,6 +15,7 @@ end
 ![範例](sample.jpg)
 
 還有
+- FFakerTW::AddressTW.name (地址) => 有 name、city、city_town、taipei
 - FFakerTW::AnimalTW.name (動物)
 - FFakerTW::CompanyTW.name (公司)
 - FFakerTW::EducationTW (學歷) => 有 name(校名)、degree(學位)
