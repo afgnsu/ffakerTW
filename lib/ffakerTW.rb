@@ -65,6 +65,7 @@ module FFakerTW
   autoload :LoremTW, 'ffakerTW/lorem_tw'
   autoload :Movie, 'ffakerTW/movie'
   autoload :Music, 'ffakerTW/music'
+  autoload :NameTW, 'ffakerTW/name'
   autoload :NameTW, 'ffakerTW/name_tw'
   autoload :NatoAlphabet, 'ffakerTW/nato_alphabet'
   autoload :Number, 'ffakerTW/number'

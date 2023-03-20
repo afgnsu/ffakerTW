@@ -6,10 +6,10 @@
   - Add Traditional-Chinese like 'NameTW'
 
 ## 0.2.0
-  - Fix bug
+   - Fix bug
 
 ## 0.3.0
-  - Verify university name
+   - Verify university name
 
 ## 0.4.0
   - Fix bug
@@ -18,8 +18,22 @@
   - Add company style
 
 ## 0.6.0
-  - Add Taiwan address
+  - Add Taiwan full address
+
 ## 0.7.0
   - Fix bug
+
 ## 0.8.0
+  - Fix bug
+
+## 0.9.0
+  - Fix bug
+
+## 1.0.0
+  - Fix bug
+
+## 1.1.0
+  - Fix bug
+
+## 1.2.0
   - Fix bug

@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["https://github.com/afgnsu/ffakerTW","Patrick Su"]
   spec.email = ["afgnsu@gmail.com"]
 
-  spec.summary = "FfakerTW generates Traditional-Chinese dummy data."
+  spec.summary = "FFakerTW generates Traditional-Chinese dummy data."
   spec.description = "FfakerTW 建立繁體中文假資料"
   spec.homepage = "https://github.com/afgnsu/ffakerTW"
   spec.required_ruby_version = ">= 2.0.0"

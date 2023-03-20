@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-module FFakerTW
-  VERSION = '0.9.0'
+module FfakerTW
+  VERSION = '1.2.0'
 end
