@@ -40,6 +40,7 @@ module FFakerTW
   autoload :CheesyLingo, 'ffakerTW/cheesy_lingo'
   autoload :Code, 'ffakerTW/code'
   autoload :Color, 'ffakerTW/color'
+  autoload :Company, 'ffakerTW/company'
   autoload :CompanyTW, 'ffakerTW/company_tw'
   autoload :Conference, 'ffakerTW/conference'
   autoload :Currency, 'ffakerTW/currency'
